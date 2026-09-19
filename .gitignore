@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+townshipos.db
+data/uploads/
+model_*.pkl
+.venv/

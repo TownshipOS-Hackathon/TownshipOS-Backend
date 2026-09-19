@@ -1,0 +1,28 @@
+LIFT MAINTENANCE SERVICE LEVEL AGREEMENT
+Township: Serenia Heights (demo) | Contractor: OTIS Malaysia | Revision 3, January 2026
+
+1. SCOPE
+1.1 This agreement covers all 16 passenger lifts in Blocks A to D.
+1.2 Preventive maintenance is carried out every 3 months per lift, in accordance with DOSH requirements.
+
+2. RESPONSE TIMES
+2.1 Emergency (person trapped, lift free-fall, fire mode fault): technician on site within 1 hour, 24/7.
+2.2 High (lift out of service, doors not closing, abnormal noise or vibration): technician on site within 4 hours.
+2.3 Medium (indicator faults, cosmetic damage, intermittent issues): attended within 2 working days.
+2.4 Low (cleaning, lighting inside car): attended at the next scheduled visit.
+
+3. RESOLUTION TIMES
+3.1 Emergency faults shall be resolved or the lift safely isolated within 4 hours of arrival.
+3.2 High faults shall be resolved within 24 hours unless parts must be imported, in which case the contractor
+    shall notify the Property Manager in writing within 24 hours with an estimated date.
+
+4. PENALTIES
+4.1 Failure to meet the 4-hour response time in clause 2.2 incurs a penalty of RM 500 per incident.
+4.2 Failure to meet the 1-hour emergency response time in clause 2.1 incurs a penalty of RM 2,000 per incident
+    and is reported to the JMB at the next meeting.
+4.3 Penalties are deducted from the following month's invoice.
+4.4 Three or more penalties in a rolling 6-month period entitle the JMB to terminate with 30 days notice.
+
+5. REPORTING
+5.1 The contractor submits a monthly report listing all call-outs, response times and parts replaced.
+5.2 Lift certificates (PMA) must be renewed 30 days before expiry; copies kept at the management office.

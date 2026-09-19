@@ -1,0 +1,25 @@
+PLUMBING AND WATER SERVICES SLA
+Contractor: AquaFix Plumbing Sdn Bhd | Revision 2, March 2026
+
+1. SCOPE
+1.1 Common-area pipework, booster pumps, water tanks, sewer lines and storm drains in Blocks A to D.
+1.2 Defects inside a parcel (unit) are the parcel owner's responsibility unless caused by common property.
+
+2. RESPONSE TIMES
+2.1 Emergency (burst main, flooding, sewage overflow, no water supply to a block): on site within 2 hours, 24/7.
+2.2 High (active leak into a unit from common property, pump failure with backup running): within 8 hours.
+2.3 Medium (slow drains, dripping common taps, minor seepage): within 3 working days.
+2.4 Low (cosmetic, requests for inspection): within 7 working days.
+
+3. LEAK INVESTIGATION
+3.1 Where a leak between units is reported, the contractor inspects both units within 8 hours and issues a
+    written finding stating whether the source is common property or parcel property.
+3.2 Under the Strata Management (Maintenance and Management) Regulations 2015 Form 28, an inter-floor leakage
+    inspection must be carried out within 7 days of the complaint.
+
+4. PENALTIES
+4.1 Missing clause 2.1 or 2.2 response times: RM 300 per incident.
+4.2 Repeat leak at the same location within 90 days of repair: rework at no charge.
+
+5. WATER TANKS
+5.1 Tanks are cleaned and disinfected every 6 months with a certificate issued to the management office.

@@ -1,0 +1,27 @@
+EMERGENCY STANDARD OPERATING PROCEDURE
+Property Management Office | Revision 5, February 2026
+
+1. CLASSIFICATION
+1.1 An emergency is any incident with immediate risk to life or of major property damage, including: person trapped
+    in a lift, fire or smoke, burning smell or sparks from electrical equipment, gas smell, burst pipe or flooding,
+    falling ceiling or facade elements, structural cracks that widen visibly, and intruders on the premises.
+
+2. IMMEDIATE ACTIONS (first 15 minutes)
+2.1 The duty officer calls the relevant emergency service where life is at risk: BOMBA 999, Police 999.
+2.2 The duty officer notifies the Property Manager by phone, then the relevant contractor per its SLA.
+2.3 For lift entrapment, the duty officer reassures the occupant via intercom every 5 minutes and does not attempt
+    a manual release; only the lift contractor performs releases.
+2.4 For electrical incidents, isolate the affected distribution board if safe to do so.
+
+3. ESCALATION
+3.1 If the contractor has not confirmed dispatch within 30 minutes, escalate to the contractor's account manager
+    and log the time; this counts toward SLA penalties.
+3.2 The Property Manager informs the JMB chairperson within 2 hours of any emergency.
+
+4. RESIDENT COMMUNICATION
+4.1 A holding message in Bahasa Malaysia and English is sent to affected residents within 30 minutes.
+4.2 Do not speculate on causes or promise repair times before the contractor's assessment.
+
+5. RECORDS
+5.1 Every emergency is logged with time received, time contractor notified, time on site and time resolved.
+5.2 An incident report is filed within 24 hours and tabled at the next JMB meeting.

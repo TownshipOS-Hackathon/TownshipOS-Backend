@@ -1,0 +1,29 @@
+STRATA MANAGEMENT ACT 2013 (ACT 757) - SELECTED EXTRACTS (paraphrased for demo purposes)
+
+Section 21 - Duties and powers of the joint management body
+21(1) The duties of the JMB include: to properly maintain and manage the building and the common property and keep
+      it in a state of good and serviceable repair; to determine and impose Charges; to insure the building; to
+      comply with notices from any local or public authority; and to prepare and maintain a register of parcel owners.
+
+Section 25 - Charges and contribution to the sinking fund
+25(1) The JMB shall determine the Charges to be paid by parcel owners for the maintenance and management of the
+      common property, in proportion to the allocated share units of each parcel.
+25(3) A parcel owner who fails to pay within 14 days of a written notice is liable to interest not exceeding 10% per annum.
+
+Section 59 - Duties and powers of the management corporation
+59(1) The management corporation shall properly maintain and manage the subdivided building and the common property,
+      keep it in a state of good and serviceable repair, and comply with notices from local authorities.
+
+Section 92 - Defect liability
+92(1) The developer shall, within the defect liability period, rectify defects in the common property notified by the
+      JMB or management corporation. Where the developer fails to do so, the JMB may carry out the works and recover
+      the cost from the developer.
+
+Strata Management (Maintenance and Management) Regulations 2015 - Inter-floor leakage
+Reg. 55 A parcel owner or proprietor affected by inter-floor leakage may notify the management, which shall carry out
+      an inspection within 7 days to determine the cause and the party responsible, and issue a certificate of inspection
+      (Form 28).
+Reg. 60 The party responsible shall carry out repairs within a reasonable time; otherwise the management may carry out
+      the repairs and recover the cost.
+
+Note: These extracts are simplified for a hackathon prototype. Refer to the gazetted Act and Regulations for authoritative text.
