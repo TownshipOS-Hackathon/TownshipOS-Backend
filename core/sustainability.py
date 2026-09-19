@@ -33,23 +33,20 @@ def detect_anomalies(readings: pd.DataFrame, window: int = 12, z: float = 2.5) -
     return pd.DataFrame(out, columns=cols)
 
 
-def co2e(kwh: float, factor: float = GRID_FACTOR_KG_PER_KWH) -> float:
-    return kwh * factor
-
-
 def monthly_summary(readings: pd.DataFrame, month: str) -> dict:
     months = sorted(readings["month"].unique())
     cur = readings[readings["month"] == month]
     prev_month = months[months.index(month) - 1] if month in months and months.index(month) > 0 else None
     prev = readings[readings["month"] == prev_month] if prev_month else cur.iloc[0:0]
     pct = lambda a, b: round(100 * (a - b) / b, 1) if b else None
-    blocks = {r.block: {"kwh": float(r.kwh), "m3": float(r.m3), "co2e_tonnes": round(co2e(r.kwh) / 1000, 2)}
+    blocks = {r.block: {"kwh": float(r.kwh), "m3": float(r.m3),
+                        "co2e_tonnes": round(r.kwh * GRID_FACTOR_KG_PER_KWH / 1000, 2)}
               for r in cur.itertuples(index=False)}
     total_kwh, total_m3 = float(cur["kwh"].sum()), float(cur["m3"].sum())
     return {
         "month": month, "blocks": blocks,
         "total_kwh": total_kwh, "total_m3": total_m3,
-        "co2e_tonnes": round(co2e(total_kwh) / 1000, 2),
+        "co2e_tonnes": round(total_kwh * GRID_FACTOR_KG_PER_KWH / 1000, 2),
         "mom_kwh_pct": pct(total_kwh, float(prev["kwh"].sum())),
         "mom_m3_pct": pct(total_m3, float(prev["m3"].sum())),
         "grid_factor": GRID_FACTOR_KG_PER_KWH,

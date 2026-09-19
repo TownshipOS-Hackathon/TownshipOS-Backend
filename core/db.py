@@ -51,10 +51,4 @@ def connect(path="townshipos.db") -> sqlite3.Connection:
     conn = sqlite3.connect(str(path), check_same_thread=False)  # Streamlit reruns on threads
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
-    for col in ("latitude REAL", "longitude REAL", "location_note TEXT"):
-        try:
-            conn.execute(f"ALTER TABLE tickets ADD COLUMN {col}")
-            conn.commit()
-        except sqlite3.OperationalError:
-            pass  # column already exists
     return conn
