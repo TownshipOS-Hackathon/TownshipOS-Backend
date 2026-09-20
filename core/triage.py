@@ -72,8 +72,10 @@ Never promise a specific time. Do not mention AI. reply_bm in Bahasa Malaysia, r
 confidence is your confidence in category AND urgency together."""
 
 
-def route(category: str, urgency: str, confidence: float) -> tuple[str, int, bool]:
-    contractor, sla = ROUTING[category]
+def route(category: str, urgency: str, confidence: float,
+          routing: dict[str, tuple[str, int]] | None = None) -> tuple[str, int, bool]:
+    """`routing` comes from the admin's contractor directory; ROUTING is the offline fallback."""
+    contractor, sla = (routing or {}).get(category) or ROUTING[category]
     if urgency == "emergency":
         return contractor, min(sla, 1), True
     return contractor, sla, confidence < MIN_CONFIDENCE
@@ -172,12 +174,13 @@ def triage(text: str, image_bytes: bytes | None = None, media_type: str | None =
 
 def insert_ticket(conn, raw_text: str, image_path: str | None,
                   lat: float | None = None, lon: float | None = None,
-                  location_note: str | None = None) -> int:
+                  location_note: str | None = None, building_id: str | None = None) -> int:
     """Insert the raw complaint BEFORE calling the model, so nothing is ever lost."""
     cur = conn.execute(
-        "INSERT INTO tickets(created_at, raw_text, image_path, latitude, longitude, location_note) "
-        "VALUES(?,?,?,?,?,?)",
-        (datetime.now().isoformat(timespec="minutes"), raw_text, image_path, lat, lon, location_note))
+        "INSERT INTO tickets(created_at, raw_text, image_path, latitude, longitude, location_note, "
+        "building_id) VALUES(?,?,?,?,?,?,?)",
+        (datetime.now().isoformat(timespec="minutes"), raw_text, image_path, lat, lon,
+         location_note, building_id))
     conn.commit()
     return cur.lastrowid
 
@@ -206,6 +209,11 @@ def find_duplicate(conn, category: str, lat: float | None, lon: float | None,
 
 
 def apply_triage(conn, ticket_id: int, r: TriageResult) -> None:
+    """Dispatch is re-resolved against the admin's contractor directory before the write,
+    so suspending a contractor immediately redirects new tickets."""
+    from core.org import routing_table
+    contractor, sla, needs_human = route(r.category, r.urgency, r.confidence, routing_table(conn))
+    r.contractor, r.sla_hours, r.needs_human = contractor, sla, needs_human or r.needs_human
     conn.execute(
         "UPDATE tickets SET language=?, category=?, urgency=?, location=?, summary_en=?, contractor=?, "
         "sla_hours=?, reply_bm=?, reply_en=?, needs_human=?, confidence=?, status='open' WHERE id=?",
