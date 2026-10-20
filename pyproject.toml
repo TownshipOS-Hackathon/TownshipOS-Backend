@@ -11,6 +11,9 @@ dependencies = [
     "python-dotenv>=1.2.3",
 ]
 
+[tool.setuptools.packages.find]
+include = ["core*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
